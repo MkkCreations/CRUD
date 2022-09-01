@@ -10,12 +10,12 @@ const app = express();
 app.set('port', process.env.PORT || 4000);
 
 app.use(myconnection(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    port: 3308,
-    database: 'crudnode.js'
-}, 'single'));
+    host: 'btdakeeot7opltvjmw3m-mysql.services.clever-cloud.com',
+    user: 'uyr8df7hn82k9cr4',
+    password: 'dUnhfAtTeiGuSKDVC4Mu',
+    port: 3306,
+    database: 'btdakeeot7opltvjmw3m'
+}));
 
 app.use(bodyParser.urlencoded({
     extended: true
