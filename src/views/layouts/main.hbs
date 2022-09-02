@@ -4,24 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CRUD Node.js</title>
+    <title>CRUD "For Tasks"</title>
     
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css"/>
 
     <!-- Fontawesome Link -->
-    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+
+    <style>
+      @media only screen and (max-width: 620px) {
+        #nav-total {
+          padding: 4% 2%;
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 555px) {
+        #nav-total {
+          justify-content: center;
+        }
+        #div-title{
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        #ul-nav{
+          margin-left: 0;
+        }
+        #ul-nav>li>a {
+          padding: 8px;
+        }
+        #div-create {
+          width: 80%;
+        }
+      }
+      @media only screen and (max-width: 495px) {
+        #action-edit {
+          margin-top: 2px;
+        }
+      }
+    </style>
  
   </head>
   <body class="bg-gray-200">
 
-    <nav class="flex py-5 bg-gray-800 text-white px-24">
-      <div class="w-1/2 px-12 mr-auto">
-        <a class="text-2xl font-bold" href="/">My Application</a>
+    <nav class="flex flex-wrap py-5 bg-gray-800 text-white px-10" id="nav-total">
+      <div class=" px-12 text-center mr-auto" id="div-title">
+        <a class="text-2xl font-bold" href="/">CRUD Application</a>
       </div>
 
-      <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
+      <ul class=" ml-auto flex justify-end pt-1" id="ul-nav">
         <li class="nav-item px-4">
           <a href="/tasks" class="nav-link font-semibold hover:bg-blue-700 py-3 px-4 rounded-md">My tasks</a>
         </li>
