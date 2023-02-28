@@ -15,7 +15,7 @@ app.use(myconnection(mysql, {
     password: 'dUnhfAtTeiGuSKDVC4Mu',
     port: 3306,
     database: 'btdakeeot7opltvjmw3m'
-}));
+}, 'pool'));
 
 app.use(bodyParser.urlencoded({
     extended: true
